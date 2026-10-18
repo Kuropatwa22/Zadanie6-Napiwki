@@ -146,4 +146,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         tools:text="Na osobę: 55,00 zł" />
 
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:constraint_referenced_ids="tvResultLabel,tvResult,tvPerPerson" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
