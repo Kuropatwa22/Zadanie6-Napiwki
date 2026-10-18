@@ -1,24 +1,39 @@
 package com.example.kalkulator_napiwku;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.TextView;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+
+    EditText etAmount;
+    EditText etPeople;
+    SeekBar sbPercent;
+    CheckBox cbRound;
+    TextView tvPercentValue;
+    TextView tvResult;
+    TextView tvPerPerson;
+    Button btnCalculate;
+    Button btnClear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        etAmount = findViewById(R.id.etAmount);
+        etPeople = findViewById(R.id.etPeople);
+        sbPercent = findViewById(R.id.sbPercent);
+        cbRound = findViewById(R.id.cbRound);
+        tvPercentValue = findViewById(R.id.tvPercentValue);
+        tvResult = findViewById(R.id.tvResult);
+        tvPerPerson = findViewById(R.id.tvPerPerson);
+        btnCalculate = findViewById(R.id.btnCalculate);
+        btnClear = findViewById(R.id.btnClear);
     }
 }
