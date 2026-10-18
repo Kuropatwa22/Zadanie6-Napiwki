@@ -35,5 +35,26 @@ public class MainActivity extends AppCompatActivity {
         tvPerPerson = findViewById(R.id.tvPerPerson);
         btnCalculate = findViewById(R.id.btnCalculate);
         btnClear = findViewById(R.id.btnClear);
+
+        sbPercent.setOnSeekBarChangeListener(
+                new SeekBar.OnSeekBarChangeListener() {
+
+                    @Override
+                    public void onProgressChanged(
+                            SeekBar seekBar, int progress, boolean fromUser) {
+
+                        tvPercentValue.setText(
+                                getString(R.string.percent_format, progress));
+                    }
+
+                    @Override
+                    public void onStartTrackingTouch(SeekBar seekBar) {
+                    }
+
+                    @Override
+                    public void onStopTrackingTouch(SeekBar seekBar) {
+                    }
+                });
+
     }
 }
