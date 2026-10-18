@@ -1,3 +1,20 @@
+
 <resources>
-    <string name="app_name">Kalkulator-Napiwku</string>
+    <string name="app_name">Napiwek</string>
+    <string name="screen_title">Kalkulator napiwku</string>
+    <string name="hint_amount">Kwota rachunku</string>
+    <string name="label_percent">Napiwek</string>
+    <string name="start_percent">10%</string>
+    <string name="round_up">Zaokrąglij w górę</string>
+    <string name="hint_people">Liczba osób</string>
+    <string name="start_people">1</string>
+    <string name="btn_clear">Wyczyść</string>
+    <string name="btn_calculate">Policz</string>
+    <string name="label_result">Do zapłaty</string>
+    <string name="percent_format">%1$d%%</string>
+    <string name="result_format">%1$.2f zł</string>
+    <string name="person_format">Na osobę: %1$.2f zł</string>
+    <string name="error_empty_amount">Podaj kwotę rachunku</string>
+    <string name="error_people">Podaj liczbę osób większą od zera</string>
+    <string name="error_amount">Podaj poprawną kwotę</string>
 </resources>
